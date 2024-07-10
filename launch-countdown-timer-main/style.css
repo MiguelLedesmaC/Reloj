@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --Grayish_blue: hsl(237, 18%, 59%);
+    --Soft_red: hsl(345, 95%, 68%);
+    --White: hsl(0, 0%, 100%);
+    --Dark_desaturated_blue: hsl(236, 21%, 26%);
+    --Very_dark_blue: hsl(235, 16%, 14%);
+    --Very_dark_mostly_black_blue: hsl(234, 17%, 12%);
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    height: 100vh;
+    font-style: normal;
+    background-color: var(--Very_dark_mostly_black_blue);
+}
+
+.h1 {
+    color: var(--White);
+    margin-bottom: 2rem;
+    letter-spacing: .4rem;
+    font-weight: 700;
+}
+
+.reloj {
+    display: flex;
+    gap: 1rem;
+}
+
+.container__hora {
+    position: relative;
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rectangulo {
+    width: 100%;
+    height: 50px;
+    background-color: var(--Dark_desaturated_blue); /* Color de fondo del rectángulo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.rectangulo-up {
+    border-bottom: 2px solid hsl(235, 26%, 25%);
+}
+
+.rectangulo-down {
+    border-top: 2px solid hsl(235, 26%, 25%);
+
+    margin-bottom: 1rem;
+}
+
+.numero {
+    position: absolute;
+    top: 1.2rem;
+    color: var(--Soft_red);
+    font-size: 3rem; 
+}
+
+.container__hora__text {
+    font-size: .6rem;
+    letter-spacing: .2rem;
+    color: var(--Grayish_blue);
+}
+
+
+#redes__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 25%;
+}
+
+
+footer {
+    position: absolute;
+    bottom: .5rem;
+}
+
+.container__redes__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+footer > span {
+    color: var(--Grayish_blue);
+    letter-spacing: .2rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Soft_red);
+}
